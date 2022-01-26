@@ -1,10 +1,10 @@
 <!-- # ![BitApp]( ./bitcoin/src/images/demo/demo-full.png) -->
-# Bitcoin
+# Dance Vote
 
 <table>
 <tr>
 <td>
-  A webapp using CoinGecko’s public API to display information about Bitcoin stock growth in a given period of time. It will show maximum amount of days the stock price has decreased in a row, the day of highest trading volume and it's value and shows based on the history which day person should buy or sell. 
+  A webapp to create and answer to a poll and display the results in realtime. information about Bitcoin stock growth in a given period of time. It will show maximum amount of days the stock price has decreased in a row, the day of highest trading volume and it's value and shows based on the history which day person should buy or sell. 
 </td>
 </tr>
 </table>
@@ -39,5 +39,11 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 <!-- - [CoinGecko API](https://www.coingecko.com/en/api/documentation) - Power your applications with CoinGecko’s independently sourced crypto data such as live prices, trading volume, exchange volumes, trading pairs, historical data, contract address data, crypto categories, crypto derivatives, images and more. -->
 
 ## To-do
+- pari tulee äänestysnäkymään heti heidän arvonnan jälkeen
+- äänestäjä pystyy raahaamalla muokkaamaan parien järjestystä koko äänestyksen ajan
+- Ei kirjautumista mutta pelkästään salasana. 
+- Äänestyksen luominen ja tulosten näyttäminen on äänestyksen aikana salasanan takana
+- Etusivu, josta pystyy liittymään äänestykseen tai luoda äänestyksen
+- Äänestykseen liityttäessä tarvitaan koodi, jolla äänestykseen pääsee
+- Kun aloitetaan äänestyksen luonti, annetaan äänestykselle koodi ja ohjelma luo äänestukselle salasanan
 - 
--
