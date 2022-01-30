@@ -1,16 +1,33 @@
 import React from 'react';
+import Button from '../../atoms/button/Button';
 // import PropTypes from 'prop-types';
 
-import Input from '../../atoms/input/Input'
+
+import FieldsetOneInput from '../../molecules/fieldsets/FieldsetOneInput';
 
 const Frontpage = () => {
+
+  const createNewPoll = () => {
+    console.log('click');
+  }
+
   return (
     <div>
       <h1>Frontpage</h1>
-      <h4>Create new poll</h4>
-      <Input placeholder='new poll' />
-      <h4>Participate in poll</h4>
-      <Input placeholder='poll code' />
+      <FieldsetOneInput
+        labelContent='Create new poll'
+        buttonText='create'
+        onClick={createNewPoll}
+        placeholder='poll name'
+        inputId='newPoll'
+      />
+      <FieldsetOneInput
+        labelContent='Participate to a poll'
+        buttonText='participate'
+        onClick={createNewPoll}
+        placeholder='poll id'
+        inputId='participate'
+      />
     </div>
   )
 }
