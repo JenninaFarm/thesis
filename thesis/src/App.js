@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './Styles.scss';
 
 import Frontpage from './components/pages/frontpage/Frontpage';
