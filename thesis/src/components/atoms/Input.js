@@ -1,21 +1,20 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-import Input from '../../atoms/Input'
-
-const Frontpage = () => {
+const Input = ({type, placeholder}) => {
   return (
-    <div>
-      <h1>Frontpage</h1>
-      <h4>Create new poll</h4>
-      <Input placeholder='new poll' />
-      <h4>Participate in poll</h4>
-      <Input placeholder='poll code' />
-    </div>
-  )
+    <input type={type} placeholder={placeholder} size={10}>
+    </input>
+  );
 }
 
-Frontpage.propTypes = {
+Input.defaultProps = {
+  type: 'text',
+}
+
+Input.propTypes = {
+  type: PropTypes.string,
+  placeholder: PropTypes.string,
   // optionalNumber: PropTypes.number,
   // optionalArrayOf: PropTypes.arrayOf(PropTypes.number),
   // requiredFunc: PropTypes.func.isRequired,
@@ -32,4 +31,4 @@ Frontpage.propTypes = {
   // }),
 }
 
-export default Frontpage;
+export default Input;
