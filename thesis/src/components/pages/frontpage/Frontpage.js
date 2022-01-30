@@ -1,7 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-import Input from '../../atoms/Input'
+import Input from '../../atoms/input/Input'
 
 const Frontpage = () => {
   return (
