@@ -1,7 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 
-import FieldsetOneInput from '../../molecules/fieldsets/FieldsetOneInput';
+import InputWithNavigation from '../../molecules/fieldsets/InputWithNavigation';
 
 const Frontpage = () => {
 
@@ -12,19 +12,21 @@ const Frontpage = () => {
   return (
     <div>
       <h1>Frontpage</h1>
-      <FieldsetOneInput
+      <InputWithNavigation
         labelContent='Create new poll'
         buttonText='create'
         onClick={createNewPoll}
         placeholder='poll name'
         inputId='newPoll'
+        navBase='new-poll'
       />
-      <FieldsetOneInput
+      <InputWithNavigation
         labelContent='Participate to a poll'
         buttonText='participate'
         onClick={createNewPoll}
         placeholder='poll id'
         inputId='participate'
+        navBase='vote'
       />
     </div>
   )
