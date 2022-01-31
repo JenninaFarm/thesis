@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Label = ({inputId, content}) => {
   return (
-    <label for={inputId}>
+    <label htmlFor={inputId}>
       {content}
     </label>
   );
